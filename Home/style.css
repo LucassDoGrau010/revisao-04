@@ -7,15 +7,44 @@ nav{
     display: flex;
     justify-content: center;
     gap: 20px;
+    box-shadow: 0px 3px 12px 0px #00000043;
+    padding: 10px ;
 }
 .nav-iten{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    text-decoration: none;
+    color: black;
+    gap: 8px;
+    opacity: 0.5;
+    transition: all 200ms ease-in-out;
+}
+nav .nav-iten:hover{
+    opacity: 1;
 }
 .icone-nav{
     display: flex;
     width: auto;
     height: 40px;
+}
+
+.nav-iten p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.s1{
+    background-image: url(../assets/images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;   
+    background-attachment: fixed;
+    box-shadow: 0px 3px 12px #0000085d;
+}
+
+.s2{
+    height: 100vh;   
 }
