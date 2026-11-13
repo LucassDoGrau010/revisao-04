@@ -1,38 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Site institucional</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
-        <a href="../Home/index.html" class="nav-iten">
-            <img src="../assets/icons/botao-home.png" alt="Home" class="icone-nav">
+        <a class="nav-item" href="../Home">
+            <img class="icone-nav" src="../assets/icons/botao-home.png" alt="Home">
             <p>Home</p>
         </a>
-         <a href="../Home/index.html" class="nav-iten">
-            <img src="../assets/icons/botao-home.png" alt="Home" class="icone-nav">
+        <a class="nav-item" href="../Institution">
+            <img class="icone-nav" src="../assets/icons/botao-home.png" alt="Home">
             <p>Instituição</p>
         </a>
-         <a href="../Home/index.html" class="nav-iten">
-            <img src="../assets/icons/botao-home.png" alt="Home" class="icone-nav">
-            <p>Produtos</p>
+        <a class="nav-item" href="../Products">
+            <img class="icone-nav" src="../assets/icons/botao-home.png" alt="Home">
+            <p>
+                Produtos
+            </p>
         </a>
-         <a href="../Home/index.html" class="nav-iten">
-            <img src="../assets/icons/botao-home.png" alt="Home" class="icone-nav">
-            <p>Home</p>
+        <a class="nav-item" href="../Contact">
+            <img class="icone-nav" src="../assets/icons/botao-home.png" alt="Home">
+            <p>Contato</p>
         </a>
-        
     </nav>
 
-    <section class="s1">
+    <div id="wrap-open" class="wrap-open" onclick="abrir()">
+        <img src="../assets/icons/menu.png" alt="menu">
+    </div>
 
+    <div id="menu-mobile">
+        <img onclick="fechar()" src="../assets/icons/fechar.png" alt="Fechar">
+        <a href="../Home/">Home</a>
+        <a href="../Institution/">Instituição</a>
+        <a href="../Products/">Produtos</a>
+        <a href="../Contact/">Contato</a>
+    </div>
+
+    <section class="s1">
+        <div class="wrap-divs">
+            <div class="title-div">
+                <h1>Título qualquer da página</h1>
+            </div>
+            <div class="wrap-btns">
+                <button onclick="irParaContato()">Contato</button>
+                <button onclick="praBaixo()">Pra baixo</button>
+            </div>
+        </div>
     </section>
 
     <section class="s2">
-       
+        <div class="card">
+            <div class="wrap-img">
+                <img src="../assets/images/card01.avif" alt="Dog01">
+            </div>
+            <div class="wrap-texts">
+                <h2>Título 01</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="wrap-img">
+                <img src="../assets/images/card02.jpeg" alt="Dog02">
+            </div>
+            <div class="wrap-texts">
+                <h2>Título 02</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="wrap-img">
+                <img src="../assets/images/card03.jpg" alt="Dog03">
+            </div>
+            <div class="wrap-texts">
+                <h2>Título 03</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
